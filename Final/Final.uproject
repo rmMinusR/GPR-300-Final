@@ -11,6 +11,11 @@
 			"AdditionalDependencies": [
 				"Engine"
 			]
+		},
+		{
+			"Name": "MeshFromHeightmap",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
 		}
 	]
 }

@@ -9,6 +9,6 @@ public class FinalEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "Final" } );
+		ExtraModuleNames.AddRange( new string[] { "Final", "MeshFromHeightmap" } );
 	}
 }

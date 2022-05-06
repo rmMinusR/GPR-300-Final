@@ -9,6 +9,6 @@ public class FinalTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "Final" } );
+		ExtraModuleNames.AddRange( new string[] { "Final", "MeshFromHeightmap" } );
 	}
 }
