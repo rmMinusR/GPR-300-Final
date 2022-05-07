@@ -1,0 +1,17 @@
+#include "/Engine/Public/Platform.ush"
+
+RWStructuredBuffer<FVector> Vertices;
+Texture2D Heightmap;
+
+float2 XZ_scale;
+float Y_scale;
+
+[numthreads(THREADGROUPSIZE, 1, 1)]
+void MainCS(uint3 ThreadId : SV_DispatchThreadID)
+{
+	FVector pos = Vertices[ThreadId.x];
+	
+	pos.y = Y_scale * Heightmap.Sample(pos.xz/XZ_scale);
+	
+	Vertices[ThreadId.x] pos;
+}
