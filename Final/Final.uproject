@@ -15,7 +15,7 @@
 		{
 			"Name": "MeshFromHeightmap",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "PostConfigInit"
 		}
 	]
 }
